@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Search App</title>
+</head>
+<body>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+      background-color: rgb(63, 62, 62);
+      color: white;
+  
+    }
+    
+    .heading{
+         height: 80px;
+         width: 100%;
+         display: flex;
+         justify-content: center;
+          font-size: 1rem;
+         align-items: center;
+    }
+   .container{
+       height: 80px;
+       width: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       gap: 10px;
+
+   }
+   #searchbox{
+    height: 40px;
+    width: 200px;
+     padding-left: 20px ;
+    
+     background-color: transparent;
+     color: white;
+     border-radius: 5px;
+
+    
+   }
+   
+@media (max-width:1000px) {
+  #boxcontainer{
+
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+    margin-bottom: 40px;
+    justify-content: center;
+  }  
+}
+   #searchbox:hover{
+    background-color: white;
+    color: black;
+    font-size: 1rem;
+    
+   }
+   #searchbtn:hover{
+    background-color: white;
+    color: black;
+   }
+   #searchbtn{
+    height: 40px;
+    width: 80px;
+   
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+   }
+   #boxcontainer{
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      
+   }
+  </style>
+     <div class="heading">
+      <h1>Image Search App</h1>
+
+     </div>
+    <div class="container">
+      <input type="text" id="searchbox" placeholder="Search for images...">
+       
+      <button id="searchbtn">Search</button>
+    
+    </div>
+
+    <div id="boxcontainer">
+
+    </div>
+   <script src="java.js"></script>
+  
+</body>
+</html>
